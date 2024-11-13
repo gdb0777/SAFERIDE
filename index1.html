@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Такси & Drink and Drive Услуги</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #fae311;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #111111;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .services {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+            scroll-margin-top: 100px;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h2 {
+            color: #fae311;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            color: #ffffff;
+            list-style-position: inside;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #ffeb3b;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #fae311;
+        }
+
+        footer {
+            background-color: #111111;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 4rem;
+            scroll-margin-top: 100px;
+            border-top: 1px solid #fae311;
+        }
+
+        .contact-info {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info h2 {
+            color: #fae311;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SAFERIDE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Начало</a></li>
+                <li><a href="#taxi-service">Услуги</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Безопасно пътуване по всяко време</h1>
+        <p>Професионални шофьорски услуги 24/7</p>
+        <a href="#contact" class="cta-button">Поръчай сега</a>
+    </section>
+
+    <section class="services">
+        <div class="service-card" id="taxi-service">
+            <img src="background.jpg" alt="Такси услуги">
+            <h2>Таксиметрови услуги</h2>
+            <p>Бързо и надеждно придвижване в града и извън него</p>
+            <ul style="text-align: left; margin: 1rem 0;">
+                <li>24/7 обслужване</li>
+                <li>Професионални шофьори</li>
+                <li>Климатизирани автомобили</li>
+                <li>Изгодни цени</li>
+            </ul>
+            <a href="#contact" class="cta-button">Повикай такси</a>
+        </div>
+
+        <div class="service-card">
+            <img src="Festive season drink driving campaigns_ the key is never ever drink and drive.jpeg" alt="Drink and Drive услуги">
+            <h2>Drink & Drive</h2>
+            <p>Безопасно прибиране вкъщи след вечерно парти</p>
+            <ul style="text-align: left; margin: 1rem 0;">
+                <li>Шофиране на вашия автомобил</li>
+                <li>Дискретна услуга</li>
+                <li>Предварителна резервация</li>
+                <li>Опитни шофьори</li>
+            </ul>
+            <a href="#contact" class="cta-button">Резервирай шофьор</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-info">
+            <h2>Свържете се с нас</h2>
+            <p>Телефон: 0888 760 581</p>
+            <p>Email: gdb0777@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
